@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./quiz.css">
+    <title>quiz app</title>
+</head>
+<body>
+    
+    <div class="quiz-container">  <H1> TIME FOR QUIZ</H1>
+        <div class="quiz-header">
+            <h2>Question <span id="question-number">1</span>/5</h2>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <div class="score">Score <span id="score">0</span></div>
+        </div>
+        <h3 id="question">In web design, what does CSS stand for?</h3>
+        <div class="options">
+            <button class="option" onclick="selectAnswer(0)">A. Counter Strike: Source</button>
+            <button class="option" onclick="selectAnswer(1)">B. Corrective Style Sheet</button>
+            <button class="option" onclick="selectAnswer(2)">C. Computer Style Sheet</button>
+            <button class="option" onclick="selectAnswer(3)">D. Cascading Style Sheet</button>
+        </div>
+        <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+    <script src="./quiz.js"></script>
+</body>
+</html>
